@@ -1,0 +1,19 @@
+<h1> EDIT YOUR DIRECTOR! </h1>
+
+<form action="/update_director/<%=@director[:id]%>">
+
+<label for="name">Name</label>
+<input id="name" name="name" value="<%=@director[:name]%>"></input>
+<br>
+<label for="bio" >Bio</label>
+<input id="bio" name="bio" value="<%=@director[:bio]%>"></input>
+<br>
+<label for="dob" >Date of Birth</label>
+<input id="dob" name="dob" value="<%=@director[:dob]%>"></input>
+<br>
+<label for="image_url" >Image URL</label>
+<input id="image_url" name="image_url" value="<%=@director[:image_url]%>"</input>
+<br>
+<button>UPDATE DIRECTOR</button>
+
+</form>

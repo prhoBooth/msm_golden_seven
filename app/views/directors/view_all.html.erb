@@ -1,0 +1,14 @@
+<h1> VIEW ALL DIRECTORS </h1>
+
+<table>
+<% @directors.each do |director|%>
+<tr>
+<td><%= director[:name] %></td>
+<td><a href="/directors/<%=director[:id]%>"> View </a></td>
+<td><a href="/delete_director/<%=director[:id]%>"> Delete </a></td>
+<td><a href="/directors/<%=director[:id]%>/edit_form"> Edit </a></td>
+</tr>
+<% end %>
+</table>
+<br>
+<a href="/new_form"> Add New Director </a>
